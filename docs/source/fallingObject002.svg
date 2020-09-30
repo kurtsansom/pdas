@@ -1,0 +1,837 @@
+ <svg width="100px" height="150px" viewbox="0 0  612 792" 
+  version="1.1"  baseProfile="full" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:ev="http://www.w3.org/2001/xml-events"> 
+<line x1="70" y1="574" x2="490" y2="574"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="70" y1="518" x2="490" y2="518"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="70" y1="462" x2="490" y2="462"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="70" y1="406" x2="490" y2="406"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="70" y1="350" x2="490" y2="350"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="70" y1="294" x2="490" y2="294"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="70" y1="238" x2="490" y2="238"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="70" y1="182" x2="490" y2="182"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="70" y1="126" x2="490" y2="126"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="140" y1="630" x2="140" y2="70"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="210" y1="630" x2="210" y2="70"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="280" y1="630" x2="280" y2="70"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="350" y1="630" x2="350" y2="70"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<line x1="420" y1="630" x2="420" y2="70"
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+ <polygon points=" 
+   70,630
+   490,630
+   490,70
+   70,70
+  " 
+ style=" 
+       stroke: rgb(0%,0%,0%);
+       stroke-width:  0.50;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<path d= "M 70,642" />
+ <text x="70" y="642"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: start; 
+  ">
+ 0
+ </text>
+<path d= "M 140,642" />
+ <text x="140" y="642"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: middle; 
+  ">
+ 2
+ </text>
+<path d= "M 210,642" />
+ <text x="210" y="642"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: middle; 
+  ">
+ 4
+ </text>
+<path d= "M 280,642" />
+ <text x="280" y="642"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: middle; 
+  ">
+ 6
+ </text>
+<path d= "M 350,642" />
+ <text x="350" y="642"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: middle; 
+  ">
+ 8
+ </text>
+<path d= "M 420,642" />
+ <text x="420" y="642"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: middle; 
+  ">
+ 10
+ </text>
+<path d= "M 490,642" />
+ <text x="490" y="642"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: middle; 
+  ">
+ 12
+ </text>
+<path d= "M 280,653" />
+ <text x="280" y="653"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: middle; 
+  ">
+ time
+ </text>
+<path d= "M 69,636" />
+ <text x="69" y="636"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 0
+ </text>
+<path d= "M 69,580" />
+ <text x="69" y="580"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 5
+ </text>
+<path d= "M 69,524" />
+ <text x="69" y="524"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 10
+ </text>
+<path d= "M 69,468" />
+ <text x="69" y="468"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 15
+ </text>
+<path d= "M 69,412" />
+ <text x="69" y="412"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 20
+ </text>
+<path d= "M 69,356" />
+ <text x="69" y="356"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 25
+ </text>
+<path d= "M 69,300" />
+ <text x="69" y="300"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 30
+ </text>
+<path d= "M 69,244" />
+ <text x="69" y="244"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 35
+ </text>
+<path d= "M 69,188" />
+ <text x="69" y="188"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 40
+ </text>
+<path d= "M 69,132" />
+ <text x="69" y="132"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 45
+ </text>
+<path d= "M 69,76" />
+ <text x="69" y="76"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: end; 
+  ">
+ 50
+ </text>
+<path d= "M 35,350" />
+ <g transform="translate(          35 ,         350 )">
+ <g transform="rotate(-90)">
+ <text x="0" y="0" 
+ style=" 
+ font-family: sans-serif; 
+ font-weight: normal;
+ font-style: normal;
+  font-size: 12;
+  stroke: none; 
+  fill: rgb(0%,0%,0%);
+ text-anchor: middle; 
+  ">
+ velocity
+ </text>
+ </g></g>
+ <polyline points=" 
+   70,630
+   74,619
+   77,608
+   81,598
+   84,586
+   88,575
+   91,565
+   95,554
+   98,544
+   102,534
+   105,524
+   109,514
+   112,503
+   115,493
+   119,484
+   123,475
+   126,466
+   130,458
+   133,449
+   137,441
+   140,433
+   143,425
+   147,417
+   150,409
+   154,403
+   158,396
+   161,389
+   165,382
+   168,377
+   172,371
+   175,366
+   179,360
+   182,354
+   185,350
+   189,346
+   192,340
+   196,337
+   200,332
+   203,328
+   206,324
+   210,321
+   213,318
+   217,314
+   221,311
+   224,307
+   227,305
+   231,303
+   234,300
+   238,297
+   242,295
+   245,293
+   249,292
+   251,291
+  " 
+ style=" 
+       stroke: rgb(100%,  0%,  0%);
+       stroke-width:  2.00;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+ <polyline points=" 
+   70,630
+   74,619
+   77,608
+   81,598
+   84,586
+   88,575
+   91,564
+   95,553
+   98,543
+   102,531
+   105,520
+   109,509
+   112,498
+   115,488
+   119,477
+   123,465
+   126,454
+   130,444
+   133,433
+   137,422
+   140,410
+   143,400
+   147,389
+   150,378
+   154,367
+   158,357
+   161,346
+   165,334
+   168,324
+   172,313
+   175,303
+   179,292
+   182,281
+   185,270
+   189,259
+   192,249
+   196,238
+   200,228
+   203,217
+   206,207
+   210,195
+   213,185
+   217,174
+   221,164
+   224,154
+   227,143
+   228,142
+  " 
+ style=" 
+       stroke: rgb(  0%,100%,  0%);
+       stroke-width:  2.00;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+ <polyline points=" 
+   70,630
+   74,619
+   77,608
+   81,598
+   84,586
+   88,575
+   91,564
+   95,554
+   98,543
+   102,531
+   105,520
+   109,510
+   112,499
+   115,489
+   119,478
+   123,466
+   126,456
+   130,446
+   133,435
+   137,425
+   140,414
+   143,404
+   147,394
+   150,382
+   154,372
+   158,361
+   161,350
+   165,340
+   168,329
+   172,318
+   175,307
+   179,296
+   182,286
+   185,275
+   189,265
+   192,254
+   196,244
+   200,232
+   203,222
+   206,211
+   210,201
+   213,191
+   217,180
+   221,170
+   224,160
+   227,150
+   229,145
+  " 
+ style=" 
+       stroke: rgb(  0%,  0%,100%);
+       stroke-width:  2.00;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+ <polyline points=" 
+   70,630
+   74,619
+   77,609
+   81,599
+   84,589
+   88,581
+   91,573
+   95,567
+   98,562
+   102,557
+   105,553
+   109,549
+   112,547
+   115,545
+   119,544
+   123,542
+   126,540
+   130,540
+   133,539
+   137,539
+   140,538
+   143,538
+   147,538
+   150,537
+   154,537
+   158,537
+   161,537
+   165,537
+   168,537
+   172,537
+   175,537
+   179,537
+   182,537
+   185,537
+   189,537
+   192,537
+   196,537
+   200,537
+   203,537
+   206,537
+   210,537
+   213,537
+   217,537
+   221,537
+   224,537
+   227,537
+   231,537
+   234,537
+   238,537
+   242,537
+   245,537
+   249,537
+   252,537
+   256,537
+   259,537
+   263,537
+   266,537
+   269,537
+   273,537
+   277,537
+   280,537
+   283,537
+   287,537
+   291,537
+   294,537
+   298,537
+   301,537
+   304,537
+   308,537
+   312,537
+   315,537
+   319,537
+   322,537
+   326,537
+   329,537
+   332,537
+   336,537
+   339,537
+   343,537
+   346,537
+   350,537
+   354,537
+   357,537
+   361,537
+   364,537
+   367,537
+   371,537
+   374,537
+   378,537
+   381,537
+   385,537
+   389,537
+   392,537
+   396,537
+   399,537
+   403,537
+   406,537
+   410,537
+   413,537
+   416,537
+   420,537
+   424,537
+   427,537
+   431,537
+   434,537
+   438,537
+   441,537
+   444,537
+   448,537
+   451,537
+   455,537
+   458,537
+   462,537
+   465,537
+   469,537
+   472,537
+   476,537
+   479,537
+   483,537
+   486,537
+   490,537
+   494,537
+   497,537
+   500,537
+   504,537
+   505,537
+  " 
+ style=" 
+       stroke: rgb(100%, 50%,  0%);
+       stroke-width:  2.00;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+ <polyline points=" 
+   70,630
+   74,619
+   77,608
+   81,598
+   84,586
+   88,576
+   91,566
+   95,556
+   98,546
+   102,537
+   105,528
+   109,519
+   112,510
+   115,502
+   119,496
+   123,488
+   126,481
+   130,475
+   133,469
+   137,463
+   140,459
+   143,453
+   147,449
+   150,445
+   154,441
+   158,437
+   161,434
+   165,431
+   168,427
+   172,425
+   175,423
+   179,421
+   182,418
+   185,417
+   189,415
+   192,414
+   196,412
+   200,410
+   203,409
+   206,408
+   210,407
+   213,406
+   217,406
+   221,405
+   224,404
+   227,404
+   231,403
+   234,403
+   238,402
+   242,402
+   245,402
+   249,400
+   252,400
+   256,400
+   259,400
+   263,399
+   266,399
+   269,399
+   273,399
+   277,399
+   280,399
+   283,398
+   287,398
+   287,398
+  " 
+ style=" 
+       stroke: rgb(100%,100%, 50%);
+       stroke-width:  2.00;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+ <polyline points=" 
+   70,630
+   74,619
+   77,608
+   81,598
+   84,586
+   88,575
+   91,564
+   95,553
+   98,543
+   102,531
+   105,520
+   109,509
+   112,498
+   115,488
+   119,477
+   123,465
+   126,454
+   130,443
+   133,432
+   137,422
+   140,410
+   143,399
+   147,388
+   150,377
+   154,367
+   158,356
+   161,344
+   165,333
+   168,322
+   172,312
+   175,301
+   179,290
+   182,278
+   185,267
+   189,257
+   192,246
+   196,235
+   200,223
+   203,212
+   206,202
+   210,191
+   213,180
+   217,169
+   221,157
+   224,147
+   227,136
+   231,125
+  " 
+ style=" 
+       stroke: rgb(  0%,  0%,  0%);
+       stroke-width:  2.00;
+       fill: none;
+       stroke-dasharray: none;
+  " />
+<path d= "M 263,28" />
+ <text x="263" y="28"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: bold;
+ font-style: normal;
+  font-size: 16;
+  stroke: none; 
+  fill: rgb(  0%,  0%,  0%);
+ text-anchor: middle; 
+  ">
+ VELOCITY HISTORY
+ </text>
+<path d= "M 263,56" />
+ <text x="263" y="56"
+ style=" 
+ font-family: sans-serif; 
+ font-weight: bold;
+ font-style: normal;
+  font-size: 14;
+  stroke: none; 
+  fill: rgb(  0%,  0%,  0%);
+ text-anchor: middle; 
+  ">
+ initial altitude= 100 meters
+ </text>
+ </svg>

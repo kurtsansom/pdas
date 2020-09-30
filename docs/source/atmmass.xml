@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" [
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- www.pdas.com/atmmass.xml  -  called from atmthick.xml -->
+<head>
+<title>Computing the thickness of the earth's atmosphere</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="EditPad,TtM 3.11" />
+<meta name="author" content="Ralph Carmichael" />
+<meta name="description" content= 
+   "Calculating the thickness of the atmosphere of the earth." />
+<meta name="keywords" content= 
+   "atmosphere, public domain, PDAS" />
+<link rel="stylesheet" href="pdas.css" type="text/css" />
+<link rel="stylesheet" href="pdasp.css" type="text/css" media="print" />
+<style type="text/css">
+th {border: 1px solid black;}
+td {border: 1px solid black;}
+</style>
+</head>
+
+<body>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+<a href="atmthick.html">Atmosphere Thickness</a> &gt;
+Mass Distribution</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+<div id="header">
+<h1>Calculating the Mass Distribution of the Atmosphere</h1>
+</div>
+<p>
+The function m(Z) is defined to be the total mass contained between
+the two spheres of radius E and E+Z, 
+where E is the radius of the earth.
+The integral to be evaluated is
+</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>m</mi><mo>(</mo><mi>Z</mi><mo>)</mo><mo>=</mo>
+<msubsup><mo>&int;</mo><mrow><mn>0</mn> </mrow>
+<mrow><mi>Z</mi></mrow></msubsup>
+<mn>4</mn><mi>&pi;</mi><mo>(</mo><mi>E</mi><mo>+</mo><mi>r</mi><mo>)</mo>
+<msup><mi></mi><mrow><mn>2</mn></mrow></msup>
+<mi>&rho;</mi><mo>(</mo><mi>r</mi><mo>)</mo><mi>dr</mi></mrow>
+</math>
+
+<p>
+It is conceivable that this could be evaluated analytically, being
+careful to observe that the expression for density changes form at
+each boundary of the standard atmosphere (0, 11km, 20km, etc.).
+The expression for density follows from the perfect gas law once the
+pressure and temperature are known from the <a href="hydro2.xml">
+equations of hydrostatic equilibrium</a>.
+Since we have a coded subroutine for density vs. altitude as part of
+the <a href="atmos.html">standard atmosphere</a> package and a routine
+for numerical integration as part of the 
+<a href="fmm.html">numerical methods</a> package, it is simpler 
+to use numerical techniques to get a table of values for m(Z).
+As with many numerical problems, it helps to have an idea of the answer
+to the problem when setting up the computational procedure.
+We know that we routinely launch satellites with orbital radius about
+100km.
+These satellites take quite some time to fall back to earth, so they
+seem to be well above what we might call the "height" of the atmosphere.
+</p>
+<p>
+The following program will calculate m(Z) for values of Z from 0 to 80km
+in steps of 1 km using the subroutine Quanc8 for integration.
+Notice that we need a function of one variable for use with Quanc8.
+The atmosphere procedure is a subroutine that returns temperature,
+pressure and density.
+So, we must make a function that calls Atmosphere
+and returns the value of 
+<math xmlns="&mathml;">
+<mrow>
+<mn>4</mn><mi>&pi;</mi><mo>(</mo><mi>E</mi><mo>+</mo><mi>r</mi><mo>)</mo>
+<msup><mi></mi><mrow><mn>2</mn></mrow></msup>
+<mi>&rho;</mi><mo>(</mo><mi>r</mi><mo>)</mo></mrow>
+</math>
+</p>
+<p>
+To return to this page from either of the two links below,
+you must use the Back button on your browser.
+</p>
+
+<ul>
+<li><a href="programs/atmmass.f90">Source code for the mass distribution program</a>.</li>
+<li><a href="programs/atmmass.out">Results from running this program</a>.</li>
+</ul>
+
+<div id="footer">
+Equations translated from T<sub>E</sub>X by 
+<a href="http://hutchinson.belmont.ma.us/tth/">T<sub>T</sub>M,version 3.11</a>
+ on  9 Jul 2002, 15:43.<br />
+<a href="http://validator.w3.org/check?uri=referer">
+  <img id="validxhtml" src="valid-xhtml11.png" 
+   alt="Valid XHTML 1.1!" height="31" width="88" /></a> 
+<a href="order.html">Order your copy</a> of
+<cite>Public Domain Computer Programs for the Aeronautical Engineer</cite>.
+<address>
+Last updated: 3 September 2010 by 
+Ralph Carmichael, <a href="mailto:webmaster@pdas.com">webmaster@pdas.com</a>
+<br />Public Domain Aeronautical Software
+<br />P.O. Box 1438 Santa Cruz CA 95061 USA
+</address>
+</div>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+<a href="atmthick.html">Atmosphere Thickness</a> &gt;
+Mass Distribution</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+</body></html>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" 
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" [
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- www.pdas.com/geopot.xml - called from difficult problems page -->
+
+<head>
+<title>Geopotential Altitude</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="EditPad, TtM 3.11" />
+<meta name="author" content="Ralph Carmichael" />
+<meta name="description" content= "Geopotential Altitude -
+   Its definition and comparison to geometric altitude." />
+<meta name="keywords" content= "atmosphere, hydrostatic, gases,
+   density, standard atmosphere, geopotential altitude,
+   public domain, PDAS" />
+<link rel="stylesheet" href="pdas.css" type="text/css" />
+<link rel="stylesheet" href="pdasp.css" type="text/css" media="print" />
+<style type="text/css"></style>
+</head>
+
+<body>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Geopotential Altitude</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+<div id="header"> 
+<h1>Geopotential and Geometric Altitude</h1> 
+</div>	
+<p>
+If the mathematical expressions do not display properly on your browser,
+you may <a href="geopot.pdf">view the page in PDF</a>. 
+I have a page to help you
+<a href="mathml.html">get started with MathML</a>.</p>
+
+
+<p>
+The standard atmosphere is defined in terms of geopotential altitude.
+The idea behind this concept
+is that a small change in geometric altitude will make a change in gravitational
+potential energy per unit mass.
+To make this same change in potential energy at sea level requires a
+equivalent change in geopotential altitude.
+Mathematically, this is expressed as g dZ = G dH 
+where H stands for geopotential altitude and Z stands for
+geometric altitude, g is the acceleration
+of gravity and G is the value of g at sea level.
+The value of g varies with altitude and is shown in
+elementary physics texts to vary as
+</p>
+
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<mfrac><mrow><mi>g</mi></mrow>
+<mrow><mi>G</mi></mrow>
+</mfrac>
+<mo>=</mo>
+<msup><mrow><mo>(</mo>
+<mfrac><mrow><mi>E</mi></mrow>
+<mrow><mi>Z</mi><mo>+</mo><mi>E</mi></mrow>
+</mfrac>
+<mo>)</mo></mrow><mrow><mn>2</mn></mrow>
+</msup>
+</mrow>
+</math>
+</td><td class="eqno">(1)</td></tr></table>
+
+<p>where E is the radius of the earth. So,</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>dH</mi><mo>=</mo>
+<mfrac><mrow><mi>g</mi></mrow>
+<mrow><mi>G</mi></mrow>
+</mfrac>
+<mi>dZ</mi><mo>=</mo>
+<msup><mrow><mo>(</mo>
+<mfrac><mrow><mi>E</mi></mrow>
+<mrow><mi>Z</mi><mo>+</mo><mi>E</mi></mrow>
+</mfrac>
+<mo>)</mo></mrow><mrow><mn>2</mn></mrow>
+</msup>
+<mi>dZ</mi></mrow>
+</math></td>
+<td class="eqno">(2)</td></tr></table>
+
+ 
+<p>and integrating yields</p>
+
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<msubsup><mo>&int;</mo><mrow><mn>0</mn> </mrow>
+<mrow><mi>H</mi></mrow></msubsup>
+<mi>dH</mi><mo>=</mo>
+<msubsup><mo>&int;</mo><mrow><mn>0</mn></mrow>
+<mrow><mi>Z</mi></mrow></msubsup>
+<msup><mrow><mo>(</mo>
+<mfrac><mrow><mi>E</mi></mrow>
+<mrow><mi>Z</mi><mo>+</mo><mi>E</mi></mrow>
+</mfrac>
+<mo>)</mo></mrow><mrow><mn>2</mn></mrow>
+</msup>
+<mi>dZ</mi></mrow>
+</math></td>
+<td class="eqno">(3)</td></tr></table>
+
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>H</mi><mo>=</mo>
+<mfrac><mrow><mi>E</mi><mi>Z</mi></mrow>
+<mrow><mi>E</mi><mo>+</mo><mi>Z</mi></mrow>
+</mfrac>
+</mrow>
+</math></td>
+<td class="eqno">(4)</td>
+</tr></table>
+
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>Z</mi><mo>=</mo>
+<mfrac><mrow><mi>E</mi><mi>H</mi></mrow>
+<mrow><mi>E</mi><mo>-</mo><mi>H</mi></mrow>
+</mfrac>
+</mrow>
+</math></td>
+<td class="eqno">(5)</td>
+</tr></table>
+
+<p>
+While Z and H are virtually identical at low altitudes, you can calculate
+that Z = 86 km corresponds to H=84.852 km. 
+(Use 6356 km for the radius of the earth).
+At this altitude, g is 0.9735 times the value at sea level.
+If you don't like differentials,
+you can regard H=EZ / (E+Z) as the definition
+of H and then derive dH/dZ=g/G.
+</p>
+
+
+<div id="footer">
+Equations translated from T<sub>E</sub>X by T<sub>T</sub>M,
+ <a href="http://hutchinson.belmont.ma.us/tth/">version 3.11</a>
+ on  9 Jul 2002, 15:43.<br />
+ <a href="http://validator.w3.org/check?uri=referer">
+  <img id="validxhtml" src="valid-xhtml11.png" 
+   alt="Valid XHTML 1.1!" height="31" width="88" /></a> 
+<a href="order.html">Order your copy</a> of
+<cite>Public Domain Computer Programs for the Aeronautical Engineer</cite>.
+<address>
+Last updated: 3 September 2010 by
+Ralph Carmichael <a href="mailto:webmaster@pdas.com">webmaster@pdas.com</a>
+<br />Public Domain Aeronautical Software
+<br />P.O. Box 1438 Santa Cruz CA 95061 USA
+</address>
+</div>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Geopotential Altitude</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+</body></html>

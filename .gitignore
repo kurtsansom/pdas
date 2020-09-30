@@ -1,0 +1,4 @@
+*.doctree
+*.pdf
+.vscode
+docs/build/

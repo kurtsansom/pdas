@@ -1,0 +1,4 @@
+# robots.txt for http://www.pdas.com/
+
+User-agent: *
+Disallow: /download.html

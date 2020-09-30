@@ -1,0 +1,82 @@
+======================
+Supersonic Wing Design
+======================
+
+.. container:: crumb
+
+   :doc:`PDAS home <index>` > :doc:`Contents <contents16>` > TEA201
+
+.. container:: newbanner
+
+   Public Domain Aeronautical Software (PDAS)  
+
+.. container::
+   :name: header
+
+   .. rubric:: Supersonic Wing Design
+      :name: supersonic-wing-design
+
+Over a period of years, NASA-Langley has developed a basic computerized
+series of supersonic design and analysis methods for aerodynamic
+configuration studies. The methods are characterized by their
+reliability in use and input simplicity.
+
+The Boeing Company has extended this basic series of methods and
+combined them into an integrated system of computer programs. The
+extensions to the methods provide several new features:
+
+-  Addition of a near-field (thickness pressure) wave drag program, to
+   complement the existing supersonic area rule program.
+-  Improved modeling of fuselage in lifting surface design and analysis
+   programs.
+-  Addition of configuration-dependent loadings in the wing design
+   program, so that the wing design is performed in the presence of
+   fuselage and nacelle effects.
+-  Addition of pressure limiting terms in the lifting pressure programs,
+   to constrain the linear theory solution.
+-  Optional CRT displays of selected program input and output data and
+   provisions for limited user editing and intervention.
+
+A plot module is included in the system to produce configuration
+drawings, and a common geometry module is used to permit a single
+geometry input for all programs. A wing pressure module permits
+summaries of wing pressures at desired conditions.
+
+The basis of the system is supersonic linearized theory, modified in two
+respects:
+
+-  The \"Whitham\" correction to disturbance positioning is used in the
+   propagation of body pressure fields.
+-  The wing lifting pressure modules contain an optional limiting
+   pressure feature to control the permissible level of upper surface
+   pressure coefficient.
+
+Superposition is used to build up the theoretical force coefficients of
+a selected configuration.
+
+The goals of the integrated system have been to develop an easily used
+supersonic design and analysis capability, with recognition of the need
+for constraints on linear theory methods to provide physical realism,
+and with inclusion of interactive display for increased design control
+over optimization cycles.
+
+This program was released by NASA through COSMIC as LAR-13666. The
+italicized text above is from the official NASA release.
+
+-  Go to the page of :doc:`references for the TEA201 <tea201refs>`
+   program.
+-  :download:`Download tea201.zip <https://data.kitware.com/api/v1/item/5f73fedd50a41e3d19b9ee20/download>`, containing the source
+   code converted to modern Fortran.
+
+
+
+Last updated: 13 July 2017 by Ralph Carmichael, `pdaerowebmaster AT
+gmail DOT com <mailto:pdaerowebmaster@gmail.com>`__
+
+.. container:: crumb
+
+   :doc:`PDAS home <index>` > :doc:`Contents <contents16>` > TEA201
+
+.. container:: newbanner
+
+   Public Domain Aeronautical Software (PDAS)  

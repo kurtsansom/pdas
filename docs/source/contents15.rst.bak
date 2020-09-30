@@ -1,0 +1,552 @@
+=========================================================================
+Contents of Public Domain Computer Programs for the Aeronautical Engineer
+=========================================================================
+
+:Author: Ralph Carmichael
+
+.. container:: crumb
+
+   :doc:`PDAS home <index>` > Contents
+
+.. container:: newbanner
+
+   Public Domain Aeronautical Software (PDAS)  
+
+.. container::
+   :name: header
+
+   .. rubric:: Contents
+      :name: contents
+
+This collection of aeronautical consists of the following programs.
+Additional information on each program may be found by following the
+highlighted link. The name in bold type following the slash at the end
+of each program description is the name of the folder on the CD where
+the files for this program will be found. Some of the programs are noted
+as work-in-progress, indicating that they are lacking in instructions or
+documentation or do not run properly.
+
++-------------------------------------+----------------------------------+
+| :doc:`Ablation                      | Analyze the transient response   |
+| Dynamics <abaxi>`                   | of an ablating axisymmetric      |
+|                                     | body, including the effect of    |
+|                                     | shape change. ** / ABAXI**       |
++-------------------------------------+----------------------------------+
+| :doc:`Ablative Nozzle               | Predict the ablation performance |
+| Materials <ablate>`                 | of rocket nozzle heat protection |
+|                                     | materials. (work-in-progress)    |
+|                                     | ** / ABLATE**                    |
++-------------------------------------+----------------------------------+
+| :doc:`Aeroelastic                   | Estimate the planform and        |
+| Analysis <elastic>`                 | aeroelastic effect on stability  |
+|                                     | derivatives and induced drag.    |
+|                                     | (work-in-progress)               |
+|                                     | ** / ELASTIC**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Atmospheric interaction       | Predict the gas dynamic and      |
+| plume <aipp>`                       | chemical properties of           |
+|                                     | underexpanded rocket plumes.     |
+|                                     | (work-in-progress) ** / AIPP**   |
++-------------------------------------+----------------------------------+
+| :doc:`Annular Duct                  | Compute the velocity             |
+| Velocity <anduct>`                  | distribution along an arbitrary  |
+|                                     | line between the inner and outer |
+|                                     | walls of an annular duct with    |
+|                                     | axisymmetric swirling flow.      |
+|                                     | (work-in-progress) ** / ANDUCT** |
++-------------------------------------+----------------------------------+
+| :doc:`Three-Dimensional Supersonic  | Determine the viscous and        |
+| Viscous Flow <aofa>`                | inviscid flow about a body of    |
+|                                     | revolution at angle of attack.   |
+|                                     | (work-in-progress) ** / AOFA**   |
++-------------------------------------+----------------------------------+
+| :doc:`Aircraft roll-out iterative   | Analyze brake performance during |
+| energy simulation                   | landing rollout. It incorporates |
+| program <aries>`                    | actual flight data from          |
+|                                     | telemetry. Developed for the     |
+|                                     | Space Shuttle vehicle.           |
+|                                     | (work-in-progress) ** / ARIES**  |
++-------------------------------------+----------------------------------+
+| :doc:`Analysis of Aircraft          | Derive aircraft motions, forces, |
+| Motions <atc>`                      | and accelerations from radar     |
+|                                     | range data. ** / ATC**           |
++-------------------------------------+----------------------------------+
+| :doc:`Arrow Wing Wave               | Closed form solution for the     |
+| Drag <rogers>`                      | wave drag of an arrow or delta   |
+|                                     | wing with sharp edges based on   |
+|                                     | work of Rogers and Puckett and   |
+|                                     | Stewart. ** / ROGERS**           |
++-------------------------------------+----------------------------------+
+| :doc:`Atmosphere <atmos>`           | Characteristics of the 1976      |
+|                                     | standard atmosphere to 1000 km   |
+|                                     | altitude. An atmosphere          |
+|                                     | procedure is given that you may  |
+|                                     | include in your own programs.    |
+|                                     | Separate versions are supplied   |
+|                                     | in Basic, C, Fortran, Pascal,    |
+|                                     | C++, and Fortran90, Visual Basic |
+|                                     | and Delphi, IDL, and Python.     |
+|                                     | Sample programs are included     |
+|                                     | that print an atmosphere table.  |
+|                                     | Non-standard atmosphere routines |
+|                                     | (hot, cold, polar, tropical) are |
+|                                     | also included. ** / ATMOS**      |
++-------------------------------------+----------------------------------+
+| :doc:`Cascade Flow                  | Nonrotating Blade-To-Blade,      |
+| (2D) <cas2d>`                       | Steady, Potential Transonic      |
+|                                     | Cascade Flow Analysis Code       |
+|                                     | (work-in-progress) ** / CAS2D**  |
++-------------------------------------+----------------------------------+
+| :doc:`Celestial Coordinate          | There are at least three basic   |
+| Transformations <celest>`           | frames of reference for          |
+|                                     | celestial coordinates:           |
+|                                     | equatorial, ecliptic, and        |
+|                                     | galactic. This module contains   |
+|                                     | subroutines for performing       |
+|                                     | transformations from one system  |
+|                                     | into another. ** / CELEST**      |
++-------------------------------------+----------------------------------+
+| :doc:`Cold Arc <coldarc>`           | Dissociated air flow effects     |
+|                                     | during plasma arc testing.       |
+|                                     | (work-in-progress)               |
+|                                     | ** / COLDARC**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Compressible Flow             | Make calculations involving      |
+| Calculator <vucalc>`                | isentropic flow, normal shock    |
+|                                     | waves, oblique shock waves,      |
+|                                     | Rayleigh and Fanno flow, and     |
+|                                     | characteristics of the standard  |
+|                                     | atmosphere. ** / VUCALC**        |
++-------------------------------------+----------------------------------+
+| :doc:`Computer Methods for          | The software from the classic    |
+| Mathematical                        | textbook by Forsythe, Malcolm    |
+| Calculation <fmm>`                  | and Moler has been rewritten in  |
+|                                     | modern Fortran along with the    |
+|                                     | sample problems and a number of  |
+|                                     | the end-of-chapter problems. You |
+|                                     | probably need a copy of the      |
+|                                     | book. ** / FMM**                 |
++-------------------------------------+----------------------------------+
+| :doc:`Conical                       | Conical relaxation program for   |
+| Relaxation <corel>`                 | supersonic wing design and       |
+|                                     | analysis (work-in-progress)      |
+|                                     | ** / COREL**                     |
++-------------------------------------+----------------------------------+
+| :doc:`Contour Plotting              | A General Algorithm For The      |
+| (I) <conplot>`                      | Construction Of Contour Plots    |
+|                                     | ** / CONPLOT**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Contour Plotting              | Generalized digital contouring   |
+| (II) <contour>`                     | program ** / CONTOUR**           |
++-------------------------------------+----------------------------------+
+| :doc:`Digital Datcom <datcom>`      | Estimate stability and control   |
+|                                     | characteristics of a wide        |
+|                                     | variety of airplane and missile  |
+|                                     | configurations with this famous  |
+|                                     | USAF program. Has all example    |
+|                                     | cases from the document, both    |
+|                                     | input and output. ** / DATCOM**  |
++-------------------------------------+----------------------------------+
+| :doc:`Divergence <diverge>`         | Aeroelastic divergence           |
+|                                     | characteristics of unguided,     |
+|                                     | slender body, multi-stage launch |
+|                                     | vehicles (work-in-progress)      |
+|                                     | ** / DIVERGE**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Eppler <eppler>`              | The well-known Eppler airfoil    |
+|                                     | program including boundary layer |
+|                                     | analysis. ** / EPPLER**          |
++-------------------------------------+----------------------------------+
+| :doc:`Fair Data <fairdata>`         | Compute the coefficients of a    |
+|                                     | smoothing spline that            |
+|                                     | approximates a set of data.      |
+|                                     | Originally designed to be used   |
+|                                     | for wind tunnel data but may be  |
+|                                     | applicable to diverse            |
+|                                     | applications. ** / FAIRDATA**    |
++-------------------------------------+----------------------------------+
+| :doc:`Flexible spacecraft           | Simulate a large class of        |
+| dynamics <fsd>`                     | flexible and rigid spacecraft.   |
+|                                     | The flexibility is treated       |
+|                                     | continuously (by use of shape    |
+|                                     | functions) rather than by finite |
+|                                     | elements. (work-in-progress)     |
+|                                     | ** / FSD**                       |
++-------------------------------------+----------------------------------+
+| :doc:`Flow Field in Supersonic      | Based on 2D or axisymmetric      |
+| Inlet <inlet>`                      | method of characteristics. NASA  |
+|                                     | Ames program by Virginia         |
+|                                     | Sorensen. ** / INLET**           |
++-------------------------------------+----------------------------------+
+| :doc:`Fluid                         | A companion program to           |
+| Properties <fluid>`                 | GasProperties computes           |
+|                                     | thermodynamic and transport      |
+|                                     | properties of many gases. Treats |
+|                                     | air and steam as well as pure    |
+|                                     | fluids. From NASA Glenn (Lewis). |
+|                                     | ** / FLUID**                     |
++-------------------------------------+----------------------------------+
+| :doc:`Flutter Analysis by Strip     | A modified strip analysis has    |
+| Theory <flutter>`                   | been developed for rapidly       |
+|                                     | predicting flutter of            |
+|                                     | finite-span, swept or unswept    |
+|                                     | wings at subsonic to hypersonic  |
+|                                     | speeds. (work-in-progress)       |
+|                                     | ** / FLUTTER**                   |
++-------------------------------------+----------------------------------+
+| :doc:`GasProperties <gasp>`         | Compute real gas properties of   |
+|                                     | ten important gases over a wide  |
+|                                     | range of temperatures and        |
+|                                     | pressures. Covers cryogenic      |
+|                                     | regions and saturated liquid/gas |
+|                                     | regions. From NASA Glenn         |
+|                                     | (Lewis). ** / GASP**             |
++-------------------------------------+----------------------------------+
+| :doc:`Geometry                      | Convert the geometry information |
+| Conversion <2wgs>`                  | for the WaveDrag,WingBody, and   |
+|                                     | PanAir into WGS for input to the |
+|                                     | hidden-line program or           |
+|                                     | ThreeView. Display your vehicle  |
+|                                     | concepts. ** / 2WGS**            |
++-------------------------------------+----------------------------------+
+| :doc:`GRAPE <grape>`                | Two-Dimensional Grids About      |
+|                                     | Airfoils And Other Shapes By The |
+|                                     | Use Of Poisson\'s Equation>      |
+|                                     | ** / GRAPE**                     |
++-------------------------------------+----------------------------------+
+| :doc:`Hypersonic Aerodynamics for   | This is a totally new program    |
+| Arbitrary                           | based on the USAF program        |
+| Bodies <hyper>`.                    | written by Gentry, Smyth and     |
+|                                     | Oliver of Douglas Aircraft.      |
+|                                     | Currently, only the inviscid     |
+|                                     | methods are coded. The geometry  |
+|                                     | is supplied in LaWgs (Langley    |
+|                                     | Wireframe Geometry Standard).    |
+|                                     | (work-in-progress) ** / HYPER**  |
++-------------------------------------+----------------------------------+
+| :doc:`Induced Drag from Span Load   | This is a popular algorithm for  |
+| Distribution <induced>`.            | computing the span load          |
+|                                     | distribution on a planar wing    |
+|                                     | when only a few sparse values of |
+|                                     | the loading are known.           |
+|                                     | ** / INDUCED**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Interplanetary Mission        | A flexible interplanetary        |
+| Planner <tomars>`                   | mission analysis program using   |
+|                                     | patched conics.                  |
+|                                     | (work-in-progress) ** / TOMARS** |
++-------------------------------------+----------------------------------+
+| :doc:`Line                          | Tools to help you get those      |
+| Interpolation <linintrp>`           | needed data points when doing an |
+| and :doc:`Line                      | airplane layout. ** / LININTRP** |
+| Intersection <lineint>`             |                                  |
++-------------------------------------+----------------------------------+
+| :doc:`IPEG <ipeg>`                  | Improved Price Estimation        |
+|                                     | Guidelines (work-in-progress)    |
+|                                     | ** / IPEG**                      |
++-------------------------------------+----------------------------------+
+| :doc:`LONGLIB <longlib>`            | A Graphics Library for           |
+|                                     | Engineering Plots.               |
+|                                     | (work-in-progress)               |
+|                                     | ** / LONGLIB**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Mean Aerodynamic              | Compute the mean aerodynamic     |
+| Chord <getmac>`                     | chord of a wing of arbitrary     |
+|                                     | planform. ** / GETMAC**          |
++-------------------------------------+----------------------------------+
+| :doc:`Kernel                        | Compute unsteady aerodynamics    |
+| Function <kernel>`                  | with a kernel function technique |
+|                                     | which uses assumed pressure      |
+|                                     | functions with unknown           |
+|                                     | coefficients. (work-in-progress) |
+|                                     | ** / KERNEL**                    |
++-------------------------------------+----------------------------------+
+| :doc:`Mass Properties of a Rigid    | Rapidly calculate the mass       |
+| Structure <massprop>`               | properties of complex rigid      |
+|                                     | structural systems.              |
+|                                     | ** / MASSPROP**                  |
++-------------------------------------+----------------------------------+
+| :doc:`Missile Lift <mislift>`       | Aerodynamic Lift On Wing-Body    |
+|                                     | Combinations At Small Angles Of  |
+|                                     | Attack In Supersonic Flow        |
+|                                     | (work-in-progress)               |
+|                                     | ** / MISLIFT**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Mission Analysis <nseg>`      | A segmented mission analysis     |
+|                                     | program for low and high speed   |
+|                                     | aircraft. (work-in-progress)     |
+|                                     | ** / NSEG**                      |
++-------------------------------------+----------------------------------+
+| :doc:`NACA                          | The coordinates of 4-digit,      |
+| Airfoils. <naca456>`                | 4-digit-modified, 5-digit,       |
+|                                     | 6-series, and 16-series airfoils |
+|                                     | may be accurately calculated.    |
+|                                     | Newly modified to present upper  |
+|                                     | and lower surface points at the  |
+|                                     | same x-coordinate. Totally       |
+|                                     | recoded in modern Fortran using  |
+|                                     | modules. ** / NACA456**          |
++-------------------------------------+----------------------------------+
+| :doc:`NASTRAN plotting post         | Plot the results from NASTRAN.   |
+| processor <nastplt>`                | (work-in-progress)               |
+|                                     | ** / NASTPLT**                   |
++-------------------------------------+----------------------------------+
+| Nozzle Exhaust                      | Analysis of three-dimensional    |
+|                                     | supersonic nozzle exhaust flow   |
+|                                     | fields (work-in-progress)        |
+|                                     | ** / EXHAUST**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Optical Systems               | A General Optical Systems        |
+| Analysis <goptics>`                 | Evaluation Program               |
+|                                     | (work-in-progress)               |
+|                                     | ** / GOPTICS**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Optimum Flight Path           | A vertical profile which         |
+| (I) <optim>`                        | minimizes aircraft fuel burn or  |
+|                                     | direct operating cost            |
+|                                     | (work-in-progress) ** / OPTIM**  |
++-------------------------------------+----------------------------------+
+| :doc:`Optimum Flight Path           | Optimum Trajectory of a Turbofan |
+| (II) <opttraj>`                     | Airplane ** / OPTTRAJ**          |
++-------------------------------------+----------------------------------+
+| :doc:`Optimal Regulator Algorithms  | Design controllers and optimal   |
+| for the Control of Linear           | filters for systems which can be |
+| Systems <oracls>`                   | modeled by linear,               |
+|                                     | time-invariant differential and  |
+|                                     | difference equations.            |
+|                                     | ** / ORACLS**                    |
++-------------------------------------+----------------------------------+
+| :doc:`Pablo <pablo>`                | Compute aerodynamic properties   |
+|                                     | of an airfoil with boundary      |
+|                                     | layer. Similar to Eppler, but    |
+|                                     | coded with MatLab. ** / PABLO**  |
++-------------------------------------+----------------------------------+
+| :doc:`Panair <panair>` (A502)       | High order aerodynamic panel     |
+|                                     | code. The most versatile and     |
+|                                     | accurate of all the linear       |
+|                                     | theory panel codes.              |
+|                                     | Subsonic/supersonic solutions    |
+|                                     | with linear source strength      |
+|                                     | variation and quadratic doublet  |
+|                                     | strength variation. Very         |
+|                                     | versatile boundary condition     |
+|                                     | specifications. ** / PANAIR**    |
++-------------------------------------+----------------------------------+
+| :doc:`PanAir input                  | Helps create the carefully       |
+| pre-processor <panin>`              | formatted input files to PanAir. |
+|                                     | ** / PANIN**                     |
++-------------------------------------+----------------------------------+
+| :doc:`Parametrized Investigation of | Delimits launch widows to define |
+| Launch Opportunities and            | the dates and times of day that  |
+| Trajectories <pilot>`               | a satellite may be launched to   |
+|                                     | satisfy mission constraints.     |
+|                                     | (work-in-progress) ** / PILOT**  |
++-------------------------------------+----------------------------------+
+| :doc:`Polynomial Root               | Solves quartic/cubic/quadratic   |
+| Finder <quartic>`                   | polynomial equations with real   |
+|                                     | coefficients taking special care |
+|                                     | in accuracy and precision.       |
+|                                     | ** / QUARTIC**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Quiz Program <quiz>`          | An educational drill program     |
+|                                     | that will teach you the aviation |
+|                                     | phonetic alphabet, 3-letter      |
+|                                     | airport codes and more. Easily   |
+|                                     | adaptable to other instructional |
+|                                     | tasks. ** / QUIZ**               |
++-------------------------------------+----------------------------------+
+| :doc:`Mars Relay Communication      | Evaluates the communication link |
+| Link <relay>`                       | between a Mars lander, a Mars    |
+|                                     | orbiter, and Earth. Designed for |
+|                                     | the Viking mission.              |
+|                                     | (work-in-progress) ** / RELAY**  |
++-------------------------------------+----------------------------------+
+| :doc:`Rotorcraft <rotor>`           | Aeroelastic Analysis for         |
+|                                     | Rotorcraft in Flight or in a     |
+|                                     | Wind Tunnel (work-in-progress)   |
+|                                     | ** / ROTOR**                     |
++-------------------------------------+----------------------------------+
+| :doc:`Turbine Rotor                 | Design of Two-Dimensional        |
+| Blade <rblade>`                     | Supersonic Turbine Rotor Blades  |
+|                                     | with Boundary-Layer Correction   |
+|                                     | (work-in-progress) ** / RBLADE** |
++-------------------------------------+----------------------------------+
+| :doc:`Super/Hypersonic Inviscid     | Computes the inviscid            |
+| Flow <shifarc>`                     | supersonic/hypersonic flowfield  |
+|                                     | about complex vehicle            |
+|                                     | geometries. (work-in-progress)   |
+|                                     | ** / SHIFARC**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Rational Spline               | Scientific data often contains   |
+| Subroutines <rspline>`              | random errors that make plotting |
+|                                     | and curve-fitting difficult. The |
+|                                     | Rational-Spline Approximation    |
+|                                     | with Automatic Tension           |
+|                                     | Adjustment algorithm leads to a  |
+|                                     | flexible, smooth representation  |
+|                                     | of experimental data.            |
+|                                     | ** / RSPLINE**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Sonic Boom <boom>`            | This program computes the        |
+|                                     | propagation of a sonic boon      |
+|                                     | through the earth\'s atmosphere. |
+|                                     | ** / BOOM**                      |
++-------------------------------------+----------------------------------+
+| :doc:`3-view <3view>` and           | Perspective views of an          |
+| :doc:`Silhouette <hlp>`             | arbitrary configuration defined  |
+|                                     | by wireframe meshes of           |
+|                                     | gridpoints with hidden line      |
+|                                     | removal. Written by David        |
+|                                     | Hedgley of NASA Dryden. A very   |
+|                                     | simple program called 3view is   |
+|                                     | also included that produces      |
+|                                     | plan, side, and rear views from  |
+|                                     | the same input file. ** / HLP**  |
++-------------------------------------+----------------------------------+
+| :doc:`Sneak Circuit                 | Analyzes electrical circuits to  |
+| Analysis <sneak>`                   | assist in the design of wiring   |
+|                                     | bundles. (work-in-progress)      |
+|                                     | ** / SNEAK**                     |
++-------------------------------------+----------------------------------+
+| :doc:`Solar Powered                 | Computes the solar energy        |
+| Satellite <solararr>`               | incident on photoelectric array  |
+|                                     | and determines the thermal       |
+|                                     | radiation gained and lost. Once  |
+|                                     | these are known, the amount of   |
+|                                     | power which can be generated and |
+|                                     | the temperature of the array is  |
+|                                     | determined. ** / SOLARARR**      |
++-------------------------------------+----------------------------------+
+| :doc:`Space Shuttle Synthesis       | Conceptual design synthesis of   |
+| Program <sssp>`                     | one- or two-stage launch         |
+|                                     | vehicles. (work-in-progress)     |
+|                                     | ** / SSSP**                      |
++-------------------------------------+----------------------------------+
+| :doc:`Supersonic Wing               | Combines source and vortex panel |
+| Analysis <w12sc3>`                  | singularities for calculating    |
+|                                     | the linear theory estimate of    |
+|                                     | supersonic configuration         |
+|                                     | aerodynamics. (work-in-progress) |
+|                                     | ** / W12SC3**                    |
++-------------------------------------+----------------------------------+
+| :doc:`Takeoff and Landing of        | This program provides for the    |
+| Transport Aircraft <tol>`           | detailed performance analysis of |
+|                                     | the takeoff and landing          |
+|                                     | capabilities of specific         |
+|                                     | aircraft designs and allows for  |
+|                                     | sensitivity studies. The program |
+|                                     | calculates aircraft performance  |
+|                                     | in accordance with the           |
+|                                     | airworthiness standards of the   |
+|                                     | Federal Aviation Regulations.    |
+|                                     | (work-in-progress) ** / TOL**    |
++-------------------------------------+----------------------------------+
+| :doc:`Tandem Blade                  | Velocities And Streamlines on a  |
+| Flowfield <tandem>`                 | Blade-To-Blade Stream Surface of |
+|                                     | a Tandem Blade Turbomachine.     |
+|                                     | (work-in-progress) ** / TANDEM** |
++-------------------------------------+----------------------------------+
+| :doc:`Supersonic Wing               | The famous Carlson-Middleton     |
+| Design <tea201>`                    | program for supersonic wing      |
+|                                     | design. (work-in-progress)       |
+|                                     | ** / TEA201**                    |
++-------------------------------------+----------------------------------+
+| :doc:`Thermal                       | One-Dimensional Numerical        |
+| Response <therm1d>`                 | Analysis Of The Transient        |
+|                                     | Thermal Response Of Multilayer   |
+|                                     | Insulative Systems               |
+|                                     | (work-in-progress)               |
+|                                     | ** / THERM1D**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Tidy <tidy>`                  | A program for renumbering        |
+|                                     | statements in a Fortran program. |
+|                                     | ** / TIDY**                      |
++-------------------------------------+----------------------------------+
+| :doc:`Thermal Protection            | Multidimensional Heat Conduction |
+| System <tps>`                       | Program (work-in-progress)       |
+|                                     | ** / TPS**                       |
++-------------------------------------+----------------------------------+
+| Trajectory Operations and           | Monte Carlo Investigation Of     |
+| Requirements                        | Trajectory Operations And        |
+|                                     | Requirements. (work-in-progress) |
+|                                     | ** / MONITOR**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Turbulent skin                | A coding of the reference        |
+| friction <turbsf>`                  | temperature method of Barbara    |
+|                                     | Short and Simon Sommer of NASA   |
+|                                     | Ames. ** / TURBSF**              |
++-------------------------------------+----------------------------------+
+| :doc:`V/STOL Aircraft Sizing and    | Performs comparative design      |
+| Performance <vascomp>`              | study of V/STOL aircraft systems |
+|                                     | yielding aircraft size and       |
+|                                     | mission performance data.        |
+|                                     | (work-in-progress)               |
+|                                     | ** / VASCOMP**                   |
++-------------------------------------+----------------------------------+
+| :doc:`Variable Dimension Automatic  | VASP is a variable dimension     |
+| Synthesis Program <vasp>`           | Fortran version of the Automatic |
+|                                     | Synthesis Program, used to       |
+|                                     | implement Kalman filtering and   |
+|                                     | control theory. ** / VASP**      |
++-------------------------------------+----------------------------------+
+| :doc:`Virtual                       | This program makes a VRML model  |
+| Reality <wgs2wrl>`                  | (a .wrl file) from a wireframe   |
+|                                     | geometry in LaWGS format.        |
+|                                     | (work-in-progress) ** / VRML**   |
++-------------------------------------+----------------------------------+
+| :doc:`Visualize Three-Dimensional   | Visualize a function of two      |
+| Surfaces <viewer>`                  | variables. ** / VIEWER**         |
++-------------------------------------+----------------------------------+
+| :doc:`Vortex Lattice Minimum Drag   | This is one of many versions of  |
+| (VLMD) <vlmd>`                      | the vortex lattice aerodynamic   |
+|                                     | program from the low speed       |
+|                                     | aerodynamics group at NASA       |
+|                                     | Langley. ** / VLMD**             |
++-------------------------------------+----------------------------------+
+| :doc:`Variable Metric Algorithm for | The algorithm is based upon a    |
+| Constrained                         | variable metric method presented |
+| Optimization <vmaco>`               | by M.J.D. Powell and a quadratic |
+|                                     | programming method by R.         |
+|                                     | Fletcher. VMACO is a non-linear  |
+|                                     | program developed to calculate   |
+|                                     | the least value of a function of |
+|                                     | n variables subject to general   |
+|                                     | constraints (both equality and   |
+|                                     | inequality). ** / VMACO**        |
++-------------------------------------+----------------------------------+
+| :doc:`Wave Drag by Area             | This is the famous Harris Wave   |
+| Rule <wavedrag>`                    | Drag Program from NASA Langley.  |
+|                                     | ** / WAVEDRAG**                  |
++-------------------------------------+----------------------------------+
+| :doc:`WingBody panel                | Subsonic/Supersonic Aerodynamics |
+| code <wingbody>`                    | of simple wing-body-tail         |
+|                                     | combinations. This is the        |
+|                                     | Woodward panel code that         |
+|                                     | includes calculation of the wing |
+|                                     | shape for minimum drag in        |
+|                                     | supersonic cruise.               |
+|                                     | ** / WINGBODY**                  |
++-------------------------------------+----------------------------------+
+| :doc:`Wireframe                     | Creates wireframe models of      |
+| generator <makewgs>`                | simple wings and bodies.         |
+|                                     | ** / MAKEWGS**                   |
++-------------------------------------+----------------------------------+
+
+All programs are supplied with complete public domain source code. Many
+of the programs include sample cases (both input and output) along with
+instructions for preparation of input files. You may use any of the
+programs or subroutines in your aeronautical projects. Individual
+programs may be downloaded free of charge. 
+
+
+| Last updated: 28 March 2013 by Ralph Carmichael, webmaster@pdas.com
+| Public Domain Aeronautical Software
+| P.O. Box 1438 Santa Cruz CA 95061 USA
+
+.. container:: crumb
+
+   :doc:`PDAS home <index>` > Contents
+
+.. container:: newbanner
+
+   Public Domain Aeronautical Software (PDAS)  

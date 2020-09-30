@@ -1,0 +1,41 @@
+/* Style sheet for personal pages called for monitor display */
+/* Last modified: 2 May 2017 */
+body {margin: 5px; color: black; background: white;
+   font-family: Arial, helvetica, sans-serif;}
+
+h1,h2,h3,h4,h5,h6 { font-family: arial,helvetica,univers,sans-serif;
+                    font-weight: bold; background: white; margin: 0.5em;}
+h1 {text-align: center}
+h1 {font-size: 200%; color: #0000d0;}
+h2 {font-size: 170%; color: #0000a0;} 
+h3 {font-size: 140%; color: #000080;}
+h4 {font-size: 120%; color: #000060;}
+h5 {font-size: 110%; color: #000040;}
+h6 {font-size: 100%; color: #000020;}
+
+p.equation {text-align: center}
+div.equation {text-align: center}
+
+table {border-collapse: collapse; }
+table.eq {width: 100%;}
+
+td.center {text-align:center}
+td.eqno {width: 1em;}
+td.right {text-align:right}
+
+address {background: white; color: black; line-height: 1em;}
+
+a:hover {background: #FFA; color: black;}
+div.newbanner {width: 100%; background: blue; color: white;
+  font-size: 120%;
+  font-family: Verdana,Arial,Helvetica, sans-serif; text-align: right;}
+
+footer {width: 100%; font-size: 90%; border-top: 3px solid red; }
+
+
+div.crumb {margin: 0.25em;}
+div#header {width: 100%; border-bottom: 3px solid blue;}
+div#footer {width: 100%; font-size: 90%; 
+   border-top: 3px solid red; }
+
+img#validxhtml {border: 0; float: right;}

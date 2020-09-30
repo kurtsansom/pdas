@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" [
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>  
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Maximum Deflection Angle for Attached Oblique Shock</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="EditPad,DOS edit"></meta>
+<meta name="author" content="Ralph Carmichael" />
+<meta name="description" content= "Computing the maximum angle for
+   turning a supersonic flow with an attached shock wave" />
+<meta name="keywords" content= "compressible flow, oblique shock,
+   attached shock, Mach, NACA, 1135.
+   public domain, PDAS" />
+<link rel="stylesheet" href="pdas.css" type="text/css" />
+<link rel="stylesheet" href="pdasp.css" type="text/css" media="print" />
+<style type="text/css">
+table td {text-align: right; border: 1px solid black; }
+table th {text-align: center; border: 1px solid black; }
+#footer { padding-top: 3px; padding-bottom: 3px; }
+img#chart {margin-top: 0;}
+img#validxhtml {position: relative; top: 5px; right: 5px; }
+.nowrap {clear: right;}
+</style>
+</head>
+
+<body>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Max Wedge</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS) &nbsp;</div>
+<div id="header">
+<h1>What is the Maximum Deflection of a Supersonic Stream
+   with an Attached Shock Wave ?</h1>
+</div>
+
+<p>
+If the mathematical expressions do not display properly on your browser,
+you may <a href="maxramp1.pdf">view the page in PDF</a>. 
+I have a page to help you
+<a href="mathml.html">get started with MathML</a>.</p>
+
+<p>
+The deflection angle, delta, for a given wave angle, theta,
+and a given Mach number M is governed by</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>cot</mi><mi>&delta;</mi><mo>=</mo><mi>tan</mi><mi>&theta;</mi><mrow><mo>[</mo>
+<mfrac><mrow><mo stretchy="false">(</mo><mi>&gamma;</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo>
+<msup><mi>M</mi><mrow><mn>2</mn></mrow>
+</msup>
+</mrow>
+<mrow><mn>2</mn><mo stretchy="false">(</mo>
+<msup><mi>M</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mi>sin</mi><msup><mi></mi><mrow><mn>2</mn></mrow></msup>
+<mi>&theta;</mi><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mfrac>
+<mo>-</mo><mn>1</mn><mo>]</mo></mrow></mrow>
+</math>
+
+
+<p>This is Eq. 138 of NACA report
+1135 and is illustrated in the following chart.</p>
+<p>
+<img id="chart2" src="chart2.png" 
+   alt="Chart 2 from NACA 1135" />
+</p>
+<p class="nowrap">
+For a given upstream Mach number, there is a maximum value of
+deflection angle and you can read the value on the y-axis.
+If you are writing a computer code and you need a function that
+returns the maximum deflection angle for a given Mach number,
+what equation do you use? 
+If you want a fast routine that gives you this result, simply use 
+BrentMin on Eq. 138.
+BrentMin is one of the members of the library of
+<a href="fmm.htm">Computer Methods for Mathematical Computation</a>
+downloadable from this site.
+You are looking for a maximum of deflection angle, delta, and
+BrentMin finds a minimum.
+But, you are in luck, because Eq. 138 returns cot(delta) and a 
+minimum of cot(delta) is a maximum of delta. Cool.
+If you want to go thru the details, see the
+<a href="maxramp2.xml">numerics page</a>.
+The results are summarized below.
+</p>
+
+<p>
+<img src="maxramp.png" 
+   alt="curve of max Ramp vs. Mach" height="400px" width="500px" />
+</p>
+
+<table id="results" border="1" cellpadding="1" cellspacing="1">
+<tr><th>Mach</th><th>delta,deg</th></tr>
+<tr><td>   1.05</td><td>   0.56</td></tr>
+<tr><td>   1.10</td><td>   1.52</td></tr>
+<tr><td>   1.20</td><td>   3.94</td></tr>
+<tr><td>   1.30</td><td>   6.66</td></tr>
+<tr><td>   1.40</td><td>   9.43</td></tr>
+<tr><td>   1.60</td><td>  14.65</td></tr>
+<tr><td>   1.80</td><td>  19.18</td></tr>
+<tr><td>   2.00</td><td>  22.97</td></tr>
+<tr><td>   2.50</td><td>  29.80</td></tr>
+<tr><td>   3.00</td><td>  34.07</td></tr>
+<tr><td>   4.00</td><td>  38.77</td></tr>
+<tr><td>   5.00</td><td>  41.12</td></tr>
+<tr><td>   6.00</td><td>  42.44</td></tr>
+<tr><td>   8.00</td><td>  43.79</td></tr>
+<tr><td>  10.00</td><td>  44.43</td></tr>
+</table>
+
+<p></p>
+
+
+<div id="footer">  
+Equations translated from T<sub>E</sub>X by 
+<a href="http://hutchinson.belmont.ma.us/tth/">T<sub>T</sub>M,version 3.11</a>
+ on  9 Jul 2002, 15:43.<br />
+<a href="http://validator.w3.org/check?uri=referer">
+  <img id="validxhtml" src="valid-xhtml11.png" 
+   alt="Valid XHTML 1.1!" height="31" width="88" /></a> 
+<a href="order.html">Order your copy</a> of
+<cite>Public Domain Computer Programs for the Aeronautical Engineer</cite>.
+<address>
+Last updated: 3 September 2010 by
+Ralph Carmichael, <a href="mailto:webmaster@pdas.com">webmaster@pdas.com</a>
+<br />Public Domain Aeronautical Software
+<br />P.O. Box 1438 Santa Cruz CA 95061 USA
+</address>
+</div>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Max Wedge</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS) &nbsp;</div>
+</body></html>

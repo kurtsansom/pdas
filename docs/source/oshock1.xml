@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" [
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- www.pdas.com/oshock1.xml - called from diffprob.htm -->
+<head>
+<title>Wave Angle for Attached Oblique Shock</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="EditPad"></meta>
+<meta name="author" content="Ralph Carmichael" />
+<meta name="description" content= "Computing the wave angle for
+   turning a supersonic flow with an attached shock wave" />
+<meta name="keywords" content= "compressible flow, oblique shock,
+   attached shock, Mach, NACA, 1135.
+   public domain, PDAS" />
+<link rel="stylesheet" href="pdas.css" type="text/css" />
+<link rel="stylesheet" href="pdasp.css" type="text/css" media="print" />
+<style type="text/css">
+table td {text-align: right; border: 1px solid black; padding: 2px;}
+table th {text-align: center; border: 1px solid black; padding 2px;}
+</style>
+</head>
+
+<body>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Oblique Shock</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+<div id="header">
+<h1>What is the Wave Angle for a Given Deflection Angle and Mach
+   Number with an Attached Shock Wave ?</h1>
+</div>
+
+<p>
+If the mathematical expressions do not display properly on your browser,
+you may <a href="oshock1.pdf">view the page in PDF</a>. 
+I have a page to help you
+<a href="mathml.html">get started with MathML</a>.</p>
+
+<p>
+The relationship between deflection angle delta, wave angle theta,
+and Mach number M in an attached oblique shock is governed by</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>cot</mi><mi>&delta;</mi><mo>=</mo><mi>tan</mi><mi>&theta;</mi><mrow><mo>[</mo>
+<mfrac><mrow><mo stretchy="false">(</mo><mi>&gamma;</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo>
+<msup><mi>M</mi><mrow><mn>2</mn></mrow>
+</msup>
+</mrow>
+<mrow><mn>2</mn><mo stretchy="false">(</mo>
+<msup><mi>M</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mi>sin</mi><msup><mi></mi><mrow><mn>2</mn></mrow></msup>
+<mi>&theta;</mi><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</mfrac>
+<mo>-</mo><mn>1</mn><mo>]</mo></mrow></mrow>
+</math>
+
+
+<p>This is Eq. 138 of NACA report
+1135 and is illustrated in the following chart.</p>
+<p>
+<img id="chart2" src="chart2.png" 
+   alt="Chart 2 from NACA 1135" />
+</p>
+
+<p>
+</p>
+
+<p>
+It is quite straightforward to compute the deflection angle
+associated with a given wave angle.
+The most typical problems encountered by engineers usually involve
+finding the wave angle for a given deflection angle.
+There is no simple solution to this problem. 
+One procedure that is shown in many textbooks and NACA 1135 is
+a clever substitution of variables that leads to a cubic polynomial
+equation.
+After finding the three roots to this equation, we are told that the
+solution for the weak shock corresponds to the middle root.
+Taking this middle root, one then applies the inverse of the original
+transformation and gets the desired wave angle.</p>
+
+<p>
+There is nothing really wrong with this approach.
+I would like to suggest that the solution for wave angle can be found
+using Newton's method and that learning how to apply Newton's method
+can prove useful in many scientific and engineering applications.
+
+
+If you want to go thru the details, see the
+<a href="oshock2.xml">numerics page</a>.
+</p>
+
+<div id="footer">  
+Equations translated from T<sub>E</sub>X by 
+<a href="http://hutchinson.belmont.ma.us/tth/">T<sub>T</sub>M,version 3.11</a>
+ on  9 Jul 2002, 15:43.<br />
+<a href="http://validator.w3.org/check?uri=referer">
+  <img id="validxhtml" src="valid-xhtml11.png" 
+   alt="Valid XHTML 1.1!" height="31" width="88" /></a> 
+<a href="order.html">Order your copy</a> of
+<cite>Public Domain Computer Programs for the Aeronautical Engineer</cite>.
+<address>
+Last updated: 3 September 2010 by
+Ralph Carmichael, <a href="mailto:webmaster@pdas.com">webmaster@pdas.com</a>
+<br />Public Domain Aeronautical Software
+<br />P.O. Box 1438 Santa Cruz CA 95061 USA
+</address>
+</div>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Oblique Shock</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+</body></html>

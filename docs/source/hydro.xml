@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" 
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" [
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- hydro2.xml called from difficult problems page -->
+
+<head>
+<title>The Hydrostatic Equations </title>
+<meta name="generator" content="EditPad, TtM 3.11" />
+<meta name="author" content="Ralph Carmichael" />
+<meta name="description" content= "The equations of static equilibrium
+   between gravitational force and the perfect gas law in the
+   atmosphere." />
+<meta name="keywords" content= "atmosphere, hydrostatic, gases,
+   density, standard atmosphere, geopotential altitude,
+   public domain, PDAS" />
+<link rel="stylesheet" href="pdas.css" type="text/css" />
+<link rel="stylesheet" href="pdasp.css" type="text/css" media="print" />
+<style type="text/css"></style>
+</head>
+
+<body>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Hydrostatic Equations</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS) &nbsp;</div>
+<div id="header"> 
+<h1>The Hydrostatic Equations</h1>
+</div>	
+
+<h2>Geopotential and Geometric Altitude</h2> 
+
+<p>
+If the mathematical expressions do not display properly on your browser,
+you may <a href="hydro.pdf">view the page in PDF</a>. 
+I have a page to help you
+<a href="mathml.html">get started with MathML</a>.</p>
+
+<p>
+The standard atmosphere is defined in terms of geopotential altitude.
+The idea behind this concept
+is that a small change in geopotential altitude will make the same change
+in gravitational potential
+energy as the geometric altitude at sea level.
+Mathematically, this is expressed as g dZ = G dH 
+where H stands for geopotential altitude and Z stands for
+geometric altitude, g is the acceleration
+of gravity and G is the value of g at sea level.
+The value of g varies with altitude and is shown in
+elementary physics texts to vary as
+</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<mfrac><mrow><mi>g</mi></mrow>
+<mrow><mi>G</mi></mrow>
+</mfrac>
+<mo>=</mo>
+<msup><mrow><mo>(</mo>
+<mfrac><mrow><mi>E</mi></mrow>
+<mrow><mi>Z</mi><mo>+</mo><mi>E</mi></mrow>
+</mfrac>
+<mo>)</mo></mrow><mrow><mn>2</mn></mrow>
+</msup>
+</mrow>
+</math>
+</td><td class="eqno">(1)</td></tr></table>
+
+<p>where E is the radius of the earth. So,</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>dH</mi><mo>=</mo>
+<mfrac><mrow><mi>g</mi></mrow>
+<mrow><mi>G</mi></mrow>
+</mfrac>
+<mi>dZ</mi><mo>=</mo>
+<msup><mrow><mo>(</mo>
+<mfrac><mrow><mi>E</mi></mrow>
+<mrow><mi>Z</mi><mo>+</mo><mi>E</mi></mrow>
+</mfrac>
+<mo>)</mo></mrow><mrow><mn>2</mn></mrow>
+</msup>
+<mi>dZ</mi></mrow>
+</math></td>
+<td class="eqno">(2)</td></tr></table>
+
+<p>and integrating yields</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<msubsup><mo>&int;</mo><mrow><mn>0</mn> </mrow>
+<mrow><mi>H</mi></mrow></msubsup>
+<mi>dH</mi><mo>=</mo>
+<msubsup><mo>&int;</mo><mrow><mn>0</mn></mrow>
+<mrow><mi>Z</mi></mrow></msubsup>
+<msup><mrow><mo>(</mo>
+<mfrac><mrow><mi>E</mi></mrow>
+<mrow><mi>Z</mi><mo>+</mo><mi>E</mi></mrow>
+</mfrac>
+<mo>)</mo></mrow><mrow><mn>2</mn></mrow>
+</msup>
+<mi>dZ</mi></mrow>
+</math></td>
+<td class="eqno">(3)</td></tr></table>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>H</mi><mo>=</mo>
+<mfrac><mrow><mi>E</mi><mi>Z</mi></mrow>
+<mrow><mi>E</mi><mo>+</mo><mi>Z</mi></mrow>
+</mfrac>
+</mrow>
+</math></td>
+<td class="eqno">(4)</td>
+</tr></table>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>Z</mi><mo>=</mo>
+<mfrac><mrow><mi>E</mi><mi>H</mi></mrow>
+<mrow><mi>E</mi><mo>-</mo><mi>H</mi></mrow>
+</mfrac>
+</mrow>
+</math></td>
+<td class="eqno">(5)</td>
+</tr></table>
+
+<p>
+While Z and H are virtually identical at low altitudes, you can calculate
+that Z = 86 km corresponds to H=84.852 km. 
+(Use 6356 km for the radius of the earth).
+At this altitude, g is 0.9735 times the value at sea level.
+If you don't like the definition of H as a differential,
+you can regard H=EZ / (E+Z) as the definition
+of H and then derive dH/dZ=g/G.
+</p>
+
+<h2>The Perfect Gas Law</h2>
+<p>The equation of state of a perfect gas is</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>&rho;</mi><mo>=</mo>
+<mfrac><mrow><mi>M</mi><mi>P</mi></mrow>
+<mrow><mi>R</mi><mi>T</mi></mrow>
+</mfrac>
+</mrow>
+</math></td>
+<td class="eqno">(6)</td>
+</tr></table>
+
+<p>
+where P is the atmospheric pressure, R is the universal gas constant,
+rho is the density,
+T is the absolute temperature
+and M is the mean molecular weight of air.
+M is assumed constant (=28.9644) up to 86 km where
+dissociation and diffusive separation become significant.
+R is 8.31432 joules K<sup>-1</sup>mol<sup>-1</sup>.
+</p>
+
+<h2>The Hydrostatic Equations</h2>
+<p>The fundamental equation is</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>dP</mi><mo>=</mo><mo>-</mo><mi>&rho;</mi><mi>gdZ</mi><mo>=</mo>
+<mo>-</mo><mi>&rho;</mi><mi>G</mi><mi>dH</mi></mrow>
+</math></td>
+<td class="eqno">(7)</td>
+</tr></table>
+
+<p>and using the perfect gas law gives</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>dP</mi><mo>=</mo><mo>-</mo>
+<mfrac><mrow><mi>M</mi><mi>P</mi></mrow>
+<mrow><mi>R</mi><mi>T</mi></mrow>
+</mfrac>
+<mi>G</mi><mi>dH</mi></mrow>
+</math></td>
+<td class="eqno">(8)</td>
+</tr></table>
+
+<p>
+This equation leads directly to the calculation of pressure in the standard atmosphere.
+Within an atmospheric layer, the temperature T is a linear function of the
+geopotential altitude H.
+</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>T</mi><mo>=</mo>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo>+</mo><mi>L</mi><mo stretchy="false">(</mo><mi>H</mi><mo>-</mo>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo stretchy="false">)</mo></mrow>
+</math></td>
+<td class="eqno">(9)</td>
+</tr></table>
+
+<p>
+where 
+<math  xmlns="&mathml;"><mi>L</mi></math> 
+is the constant gradient of temperature and 
+<math xmlns="&mathml;">
+<mrow>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+</mrow></math> and 
+<math xmlns="&mathml;">
+<mrow>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+</mrow></math> are the temperature and
+geopotential altitude at the base of the layer.
+The hydrostatic equation then becomes
+</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>dP</mi><mo>=</mo><mo>-</mo>
+<mfrac><mrow><mi>G</mi><mi>M</mi></mrow>
+<mrow><mi>R</mi></mrow>
+</mfrac>
+<mfrac><mrow><mi>P</mi></mrow>
+<mrow><mo stretchy="false">(</mo>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo>+</mo><mi>L</mi><mo stretchy="false">(</mo><mi>H</mi><mo>-</mo>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow>
+</mfrac>
+<mi>dH</mi></mrow>
+</math></td>
+<td class="eqno">(10)</td>
+</tr></table>
+
+<p>
+and the pressure at any value of H within this layer is found by
+integration of this equation
+</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<msubsup><mo>&int;</mo><mrow>
+<msub><mi>P</mi><mrow><mi>b</mi></mrow>
+</msub>
+ </mrow>
+<mrow><mi>P</mi></mrow></msubsup>
+
+<mfrac><mrow><mi>dP</mi></mrow>
+<mrow><mi>P</mi></mrow>
+</mfrac>
+<mo>=</mo><mo>-</mo>
+<msubsup><mo>&int;</mo><mrow>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+ </mrow>
+<mrow><mi>H</mi></mrow></msubsup>
+
+<mfrac><mrow><mi>G</mi><mi>M</mi></mrow>
+<mrow><mi>R</mi><mo stretchy="false">(</mo>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo>+</mo><mi>L</mi><mo stretchy="false">(</mo><mi>H</mi><mo>-</mo>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow>
+</mfrac>
+<mi>dH</mi></mrow>
+</math></td>
+<td class="eqno">(11)</td>
+</tr></table>
+
+<p>
+The right hand integral takes different forms, depending upon whether L is zero or not.
+When L=0, the integral is
+</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>ln</mi><mrow><mo>(</mo>
+<mfrac><mrow><mi>P</mi></mrow>
+<mrow>
+<msub><mi>P</mi><mrow><mi>b</mi></mrow>
+</msub>
+</mrow>
+</mfrac>
+<mo>)</mo></mrow><mo>=</mo><mo>-</mo>
+<mfrac><mrow><mi>G</mi><mi>M</mi></mrow>
+<mrow>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mi>R</mi></mrow>
+</mfrac>
+<mo stretchy="false">(</mo><mi>H</mi><mo>-</mo>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo stretchy="false">)</mo></mrow>
+</math></td>
+<td class="eqno">(12)</td>
+</tr></table>
+
+<p>and when L is not zero, the integral is</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>ln</mi><mrow><mo>(</mo>
+<mfrac><mrow><mi>P</mi></mrow>
+<mrow>
+<msub><mi>P</mi><mrow><mi>b</mi></mrow>
+</msub>
+</mrow>
+</mfrac>
+<mo>)</mo></mrow><mo>=</mo><mo>-</mo>
+<mfrac><mrow><mi>G</mi><mi>M</mi></mrow>
+       <mrow><mi>R</mi><mi>L</mi></mrow>
+</mfrac>
+<mi>ln</mi><mrow><mo>(</mo>
+<mfrac><mrow>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo>+</mo><mi>L</mi><mo stretchy="false">(</mo><mi>H</mi><mo>-</mo>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo stretchy="false">)</mo></mrow>
+<mrow>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+</mrow>
+</mfrac>
+<mo>)</mo></mrow></mrow>
+</math></td>
+<td class="eqno">(13)</td>
+</tr></table>
+
+<p>Writing these equations in exponential form, when L=0, then</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<mfrac><mrow><mi>P</mi></mrow>
+<mrow>
+<msub><mi>P</mi><mrow><mi>b</mi></mrow>
+</msub>
+</mrow>
+</mfrac>
+<mo>=</mo><mi>exp</mi><mrow><mo>(</mo><mo>-</mo>
+<mfrac><mrow><mi>G</mi><mi>M</mi><mo stretchy="false">(</mo><mi>H</mi><mo>-</mo>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo stretchy="false">)</mo></mrow>
+<mrow>
+<msub><mi>RT</mi><mrow><mi>b</mi></mrow>
+</msub>
+</mrow>
+</mfrac>
+<mo>)</mo></mrow></mrow>
+</math></td>
+<td class="eqno">(14)</td>
+</tr></table>
+
+<p>and when L is not zero,</p>
+
+<table class="eq"><tr><td>
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<mfrac><mrow><mi>P</mi></mrow>
+<mrow><msub><mi>P</mi><mrow><mi>b</mi></mrow></msub></mrow>
+</mfrac>
+<mo>=</mo>
+<msup><mrow><mo>(</mo>
+<mfrac><mrow>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo>+</mo><mi>L</mi><mo stretchy="false">(</mo><mi>H</mi><mo>-</mo>
+<msub><mi>H</mi><mrow><mi>b</mi></mrow>
+</msub>
+<mo stretchy="false">)</mo></mrow>
+<mrow>
+<msub><mi>T</mi><mrow><mi>b</mi></mrow>
+</msub>
+</mrow>
+</mfrac>
+<mo>)</mo></mrow><mrow><mo>-</mo>
+<mfrac><mrow><mi>G</mi><mi>M</mi></mrow>
+       <mrow><mi>R</mi><mi>L</mi></mrow>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</math></td>
+<td class="eqno">(15)</td>
+</tr></table>
+
+<p>
+You can see now why geopotential altitude is used for the definition of the
+standard atmosphere.
+If Z were used, then g would appear in the equations instead of G and the 
+variation of g with altitude would have to be included in the integration, 
+making a rather complicated equation.
+</p>
+
+<div id="footer">
+Equations translated from T<sub>E</sub>X by T<sub>T</sub>M,
+ <a href="http://hutchinson.belmont.ma.us/tth/">version 3.11</a>
+ on  9 Jul 2002, 15:43.<br />
+<a href="http://validator.w3.org/check?uri=referer">
+  <img id="validxhtml" src="valid-xhtml11.png" 
+   alt="Valid XHTML 1.1!" height="31" width="88" /></a> 
+<a href="order.html">Order your copy</a> of
+<cite>Public Domain Computer Programs for the Aeronautical Engineer</cite>.
+<address>
+Last updated: 3 September 2010 by
+Ralph Carmichael, <a href="mailto:webmaster@pdas.com">webmaster@pdas.com</a>
+<br />Public Domain Aeronautical Software
+<br />P.O. Box 1438 Santa Cruz CA 95061 USA
+</address>
+</div>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Hydrostatic Equations</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS) &nbsp;</div>
+</body></html>
+    

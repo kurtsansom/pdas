@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" [
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- pm.xml   called from problist.htm  -->
+<head>
+<title>Inverse Prandtl-Meyer Function</title>
+<meta name="generator" content="EditPad,TtM 3.11" />
+<meta name="author" content="Ralph Carmichael" />
+<meta name="description" content= "Computing the inverse of the
+   Prandtl-Meyer function." />
+<meta name="keywords" content= "Prandtl-Meyer, compressible flow,
+   shock-expansion theory, supersonic flow, aerodynamics,
+   public domain, PDAS" />
+<link rel="stylesheet" href="pdas.css" type="text/css" />
+<link rel="stylesheet" href="pdasp.css" type="text/css" media="print" />
+<style type="text/css">
+th {border: 1px solid black;}
+td {border: 1px solid black;}
+</style>
+</head>
+
+<body>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Inverse Prandtl-Meyer</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+<div id="header">
+<h1>How do you compute the inverse of the Prandtl-Meyer Function?</h1>
+</div>
+
+<p>
+If the mathematical expressions do not display properly on your browser,
+you may <a href="pm.pdf">view the page in PDF</a>. 
+I have a page to help you
+<a href="mathml.html">get started with MathML</a>.</p>
+
+<p>
+When a supersonic stream encounters a convex turn in which the wall
+is deflected away from the stream, an isentropic expansion occurs
+by way of a conical set of rays centered on the corner.
+The Prandtl-Meyer equation expresses the relation between the turning
+angle and the upstream and downstream Mach numbers.
+</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>&nu;</mi><mo>=</mo>
+<mfrac><mrow><mn>1</mn></mrow><mrow><mi>&lambda;</mi></mrow></mfrac>
+<mi>arctan</mi><mo stretchy="false">(</mo><mi>&lambda;</mi><mi>&beta;</mi>
+               <mo stretchy="false">)</mo><mo>-</mo><mi>arctan</mi>
+               <mo stretchy="false">(</mo><mi>&beta;</mi>
+               <mo stretchy="false">)</mo></mrow>
+</math>
+
+
+<p>where</p>
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>&lambda;</mi><mo>=</mo><msqrt><mrow>
+<mfrac><mrow><mi>&gamma;</mi><mo>-</mo><mn>1</mn></mrow>
+<mrow><mi>&gamma;</mi><mo>+</mo><mn>1</mn></mrow>
+</mfrac>
+</mrow></msqrt></mrow></math>
+
+<p>and</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>&beta;</mi><mo>=</mo><msqrt><mrow>
+<msup><mi>M</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mo>-</mo><mn>1</mn></mrow></msqrt></mrow></math>
+<p></p>
+
+<p>
+In the usual approach for calculation, you compute the value of $\nu$
+for the upstream Mach number and then add the angle thru which the 
+flow is turned.
+The downstream Mach number is that which corresponds to the downstream $\nu$.
+But, there is no easy way to compute this.
+Since the equation is relatively simple, most students of compressible
+flow theory try to use algebraic and trigonometric manipulations to 
+obtain an expression for Mach as a function of $\nu$.
+Alas, it does not seem possible and we are left with numerical procedures.
+</p>
+
+<p>
+Given a sufficiently dense table of $\nu$ vs. Mach, one can do a reverse
+table lookup.
+This is probably the method of choice for students who are doing an
+off-line calculation in simple shock-expansion theory.
+If one is developing a computing procedure this approach can still be
+used by building a large table of $\nu$ versus Mach and then doing
+interpolation as Mach versus $\nu$.
+</p>
+
+<p>
+There is a certain lack of elegance to this approach and people
+would like a nice neat function that simply returned Mach for a given $\nu$.
+In September 1975, I.M. Hall published a paper in the Aeronautical
+Journal in which he described an rational polynomial function that
+approximated the inverse Prandtl-Meyer function with accuracy sufficient
+for most engineering purposes.
+</p>
+<p>
+The function is simply a cubic polynomial divided by a quadratic.
+</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>Mach</mi><mo>=</mo>
+<mfrac><mrow><mn>1</mn><mo>+</mo><mi>Ay</mi><mo>+</mo>
+<msup><mi>By</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mo>+</mo>
+<msup><mi>Cy</mi><mrow><mn>3</mn></mrow>
+</msup>
+</mrow>
+<mrow><mn>1</mn><mo>+</mo><mi>Dy</mi><mo>+</mo>
+<msup><mi>Ey</mi><mrow><mn>2</mn></mrow>
+</msup>
+</mrow>
+</mfrac>
+</mrow>
+</math>
+
+
+<p>where</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>y</mi><mo>=</mo>
+<mo stretchy="false">(</mo><mi>&nu;</mi><mo>/</mo>
+<msub><mi>&nu;</mi><mrow><mi>&infin;</mi></mrow>
+</msub>
+<mo stretchy="false">)</mo><msup><mi></mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup>
+</mrow>
+</math>
+
+<p>and the maximum turning angle is</p>
+
+
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<msub><mi>&nu;</mi><mrow><mi>&infin;</mi></mrow>
+</msub>
+<mo>=</mo>
+<mfrac><mrow><mi>&pi;</mi></mrow>
+<mrow><mn>2</mn></mrow>
+</mfrac>
+<mo stretchy="false">(</mo><msqrt><mrow><mn>6</mn></mrow></msqrt>
+<mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow>
+</math>
+
+<p>The constants are</p>
+
+<p>
+All of the constants shown here are for $\gamma$=7/5.
+The original paper by Hall describes the calculation for
+other specific heats.
+The accuracy of the Hall approximation is quite good with
+the maximum error much less that one-tenth of one percent.
+</p>
+
+<p>
+This relationship of Hall provides an excellent approximation to
+the inverse of the Prandtl-Meyer function, but suppose you have an 
+application that requires a very high level of accuracy.
+You can use the Hall approximation as a starting point and refine the
+solution with Newton's method.
+To ddo this, you will need the derivative of nu with respect
+to Mach.
+</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<mfrac><mrow><mi>d</mi><mi>&nu;</mi></mrow>
+<mrow><mi>d</mi><mi>&beta;</mi></mrow>
+</mfrac>
+<mo>=</mo>
+<mfrac><mrow>
+<msup><mi>&beta;</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo>
+<msup><mi>&lambda;</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mo stretchy="false">)</mo></mrow>
+<mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo>
+<msup><mi>&beta;</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo>
+<msup><mi>&lambda;</mi><mrow><mn>2</mn></mrow>
+</msup>
+
+<msup><mi>&beta;</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow>
+</math>
+
+
+<p></p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<mfrac><mrow><mi>d</mi><mi>&beta;</mi></mrow>
+<mrow><mi>dM</mi></mrow>
+</mfrac>
+<mo>=</mo>
+<mfrac><mrow><mi>M</mi></mrow>
+<mrow><mi>&beta;</mi></mrow>
+</mfrac>
+</mrow>
+</math>
+
+<p></p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow>
+<mfrac><mrow><mi>d</mi><mi>&nu;</mi></mrow>
+<mrow><mi>dM</mi></mrow>
+</mfrac>
+<mo>=</mo>
+<mfrac><mrow><mi>&beta;</mi><mo stretchy="false">(</mo><mn>1</mn><mo>-</mo>
+<msup><mi>&lambda;</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mo stretchy="false">)</mo></mrow>
+<mrow><mi>M</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo>
+<msup><mi>&lambda;</mi><mrow><mn>2</mn></mrow>
+</msup>
+
+<msup><mi>&beta;</mi><mrow><mn>2</mn></mrow>
+</msup>
+<mo stretchy="false">)</mo></mrow>
+</mfrac>
+</mrow>
+</math>
+
+
+
+<p>You can download the module of Prandtl-Meyer programs from here.
+<a href="programs/pm.f90">Plain text, XX KB</a>.</p>
+
+
+
+<div id="footer">
+Equations translated from T<sub>E</sub>X by 
+<a href="http://hutchinson.belmont.ma.us/tth/">T<sub>T</sub>M,version 3.11</a>
+ on  9 Jul 2002, 18:35.<br />
+<a href="http://validator.w3.org/check?uri=referer">
+  <img id="validxhtml" src="valid-xhtml11.png" 
+   alt="Valid XHTML 1.1!" height="31" width="88" /></a> 
+<a href="order.html">Order your copy</a> of
+<cite>Public Domain Computer Programs for the Aeronautical Engineer</cite>.
+<address>
+Last updated: 3 September 2010 by
+Ralph Carmichael, <a href="mailto:webmaster@pdas.com">webmaster@pdas.com</a>
+<br />Public Domain Aeronautical Software
+<br />P.O. Box 1438 Santa Cruz CA 95061 USA
+</address>
+</div>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Inverse Prandtl-Meyer</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+</body></html>

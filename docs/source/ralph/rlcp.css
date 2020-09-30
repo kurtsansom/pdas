@@ -1,0 +1,37 @@
+/* Style sheet for personal pages called for printing */
+/* Last modified: 2 May 2017 */
+body {margin: 5px; color: black; background: white;
+   font-family: Times New Roman, Times, serif;}
+
+h1,h2,h3,h4,h5,h6 { font-family: arial,helvetica,sans-serif;
+                    font-weight: bold; color: black; margin: 0.5em;}
+h1 {text-align: center; }
+h1 {font-size: 2.2em; }
+h2 {font-size: 1.5em; } 
+h3 {font-size: 1.5em; }
+h4 {font-size: 1.25em; }
+h5 {font-size: 1em; }
+h6 {font-size: 0.75em; }
+
+a:link {color: black; background: white;}
+a:visited {color: black; background: white;}
+
+p.equation {text-align: center}
+div.equation {text-align: center}
+
+table {border-collapse: collapse; }
+table.eq {width: 100%;}
+td.center {text-align:center}
+td.eqno {width: 1em;}
+td.right {text-align:right}
+
+address {background: white; color: black;}
+
+footer {width: 100%; font-size: 90%; border-top: 2px solid black;}
+
+div.newbanner {display: none;}
+div#header {width: 100%; border-bottom: 2px solid black;}
+div#footer {width: 100%; font-size: 90%; border-top: 2px solid black; }
+
+img#validxhtml {display: none;}
+img#validcss {display: none;}

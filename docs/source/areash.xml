@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+               "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" [
+  <!ENTITY mathml "http://www.w3.org/1998/Math/MathML">
+]>  
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Surface Area of a Sears-Haack Body</title>
+<meta name="generator" content="EditPad,TtM 3.11" />
+<meta name="author" content="Ralph Carmichael" />
+<meta name="description" content= "Computing the surface area of a
+   Sears-Haach body (minimum drag body of revolution with given length
+   and volume). There is no explicit symbolic solution for the area.
+   Numerical integration must be used." />
+<meta name="keywords" content= "surface area, Sears-Haach, minimum drag,
+   body of revolution, aerodynamics, drag,
+   public domain, PDAS" />
+<link rel="stylesheet" href="pdas.css" type="text/css" />
+<link rel="stylesheet" href="pdasp.css" type="text/css" media="print" />
+<style type="text/css">
+th {border: 1px solid black;}
+td {border: 1px solid black;}
+</style>
+</head>
+
+<body>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Sears-Haack Area</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+<div id="header">
+<h1>What is the Surface Area of a Sears-Haack Body?</h1>
+</div>
+
+<p>
+If the mathematical expressions do not display properly on your browser,
+you may <a href="areash.pdf">view the page in PDF</a>. 
+I have a page to help you
+<a href="mathml.html">get started with MathML</a>.</p>
+
+<p>This question comes up from time to time. 
+It seems quite straightforward.
+To compute the surface area of a body of revolution, you must
+integrate the function
+</p>
+
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>S</mi><mo>=</mo>
+  <mn>2</mn><mi>&pi;</mi><mo>&int;</mo><mi>r</mi><msqrt><mrow><mn>1</mn><mo>+</mo>
+<msup><mrow><mo>(</mo>
+<mfrac><mrow><mi>dr</mi></mrow>
+       <mrow><mi>dx</mi></mrow>
+</mfrac>
+<mo>)</mo></mrow><mrow><mn>2</mn></mrow>
+</msup>
+</mrow></msqrt><mi>dx</mi></mrow>
+</math>
+
+<p>
+from nose to tail.
+</p>
+<p>
+For a Sears-Haack body (fixed length and volume)
+</p>
+
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>r</mi><mo>=</mo>
+<msup><mrow><mo>[</mo><mn>4</mn><mi>x</mi>
+<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>x</mi>
+<mo stretchy="false">)</mo><mo>]</mo></mrow><mrow>
+<mfrac><mrow><mn>3</mn></mrow>
+<mrow><mn>4</mn></mrow>
+</mfrac>
+</mrow>
+</msup>
+</mrow>
+</math>
+
+
+
+<math mode="display" xmlns="&mathml;">
+  <mrow>
+  <mfrac><mrow><mi>dr</mi></mrow>
+         <mrow><mi>dx</mi></mrow>
+  </mfrac>
+  <mo>=</mo><mn>3</mn>
+  <msup><mrow><mo>[</mo><mn>4</mn><mi>x</mi>
+  <mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>x</mi>
+  <mo stretchy="false">)</mo><mo>]</mo></mrow><mrow><mo>-</mo>
+   <mfrac><mrow><mn>1</mn></mrow>
+   <mrow><mn>4</mn></mrow>
+   </mfrac>
+   </mrow>
+  </msup>
+  <mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mn>2</mn><mi>x</mi><mo stretchy="false">)</mo></mrow>
+</math>
+
+
+<p>
+where r is radius / max.radius and x is the distance from nose / body length.
+</p>
+
+<p>
+Now, the only problem with this is that no one seems to be able to 
+carry out this integration symbolically.
+This includes the powerful symbolic math aids.
+However, it is rather straightforward to perform the integration
+numerically and I have a <a href="areash2.xml">numerics page</a>
+that describes the mathematical and programming techniques.
+For those of who who just want the answer, get the factor from 
+the following table for the fineness ratio (length/max diameter)
+of your body. 
+</p>
+
+
+<table cellspacing="0" border="1px solid black" align="center">
+<tr><th>f</th><th>factor</th></tr>
+<tr><td> 2</td><td>0.7811</td></tr>
+<tr><td> 4</td><td>0.7358</td></tr>
+<tr><td> 6</td><td>0.7265</td></tr>
+<tr><td> 8</td><td>0.7232</td></tr>
+<tr><td>10</td><td>0.7217</td></tr>
+<tr><td>12</td><td>0.7208</td></tr>
+<tr><td>14</td><td>0.7203</td></tr>
+<tr><td>16</td><td>0.7200</td></tr>
+<tr><td>18</td><td>0.7197</td></tr>
+<tr><td>20</td><td>0.7196</td></tr>
+<tr><td>22</td><td>0.7195</td></tr>
+<tr><td>24</td><td>0.7194</td></tr>
+<tr><td>26</td><td>0.7193</td></tr>
+<tr><td>28</td><td>0.7192</td></tr>
+<tr><td>30</td><td>0.7192</td></tr>
+<tr><td>40</td><td>0.7191</td></tr>
+<tr><td>50</td><td>0.7190</td></tr>
+</table>
+
+<p>
+Then compute the surface area from
+</p>
+
+<math mode="display" xmlns="&mathml;">
+<mrow><mi>S</mi><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mi>&pi;</mi>
+<msub><mi>r</mi><mrow><mi>max</mi></mrow>
+</msub>
+<mi>L</mi><mo stretchy="false">)</mo><mi>factor</mi></mrow>
+</math>
+
+<p>
+The quantity in parentheses is the surface area of a cylinder of the same length
+and diameter as the Sears-Haack body. So, if you just remember that the area is
+about 72 percent of that, that will be good enough for most purposes.
+</p>
+
+<div id="footer">
+Equations translated from T<sub>E</sub>X by 
+<a href="http://hutchinson.belmont.ma.us/tth/">T<sub>T</sub>M,version 3.11</a>
+ on  9 Jul 2002, 15:43.<br />
+<a href="http://validator.w3.org/check?uri=referer">
+  <img id="validxhtml" src="valid-xhtml11.png" 
+   alt="Valid XHTML 1.1!" height="31" width="88" /></a> 
+<a href="order.html">Order your copy</a> of
+<cite>Public Domain Computer Programs for the Aeronautical Engineer</cite>.
+<address>
+Last updated: 3 September 2010 by
+Ralph Carmichael, <a href="mailto:webmaster@pdas.com">webmaster@pdas.com</a>
+<br />Public Domain Aeronautical Software
+<br />P.O. Box 1438 Santa Cruz CA 95061 USA
+</address>
+</div>
+<div class="crumb">
+<a href="index.html">PDAS Home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt; 
+<a href="diffprob.html">Difficult Problems</a> &gt;
+Sears-Haack Area</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS)</div>
+</body></html>
